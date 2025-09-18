@@ -44,7 +44,7 @@ sudo chmod -R 755 dist/
 ------------------
 cd /var/www/yourwebsite.com/backend
 pm2 start server.js --name yourwebsite
-pm2 startup systemd # or not use systemd (Auto-start on Server Reboot)
+pm2 startup  # (Auto-start on Server Reboot)
 pm2 save
 ..................
 # Check Status & Logs
