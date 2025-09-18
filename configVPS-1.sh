@@ -10,6 +10,7 @@ sudo npm install -g pm2
 sudo ufw enable
 sudo ufw allow ssh
 sudo ufw allow 'Nginx Full'
+sudo ufw allow (port: 5000 or ...)
 sudo ufw status
 -----------------------
 sudo apt install git -y
@@ -64,3 +65,6 @@ git pull origin main
 npm install
 pm2 restart yourwebsite
 ..................
+sudo chown -R www-data:www-data /var/www/yourwebsite/backend/uploads
+sudo chmod -R 755 /var/www/yourwebsite/backend/uploads
+
